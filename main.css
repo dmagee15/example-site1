@@ -1,12 +1,265 @@
 
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
+
 *{
 	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
 }
 
+button:focus {outline:0;}
+a {
+    text-decoration: none !important;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.container{
+	position:relative;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	background: rgb(46, 46, 46);
+	position: fixed;
+}
+
+.headerCompany{
+	margin-right: auto;
+}
+
+.headerButton{
+	padding: 15px 30px 15px 30px;
+	font-size: 20px;
+	color: white;
+	font-family: 'Hind Madurai';
+}
+
+.jumbo{
+	min-height: 100vh;
+	width: 100%;
+	background: url("piotr-chrobot-276746-unsplash.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.jumboContent{
+	text-align: center;
+}
+
+.jumboPhrase{
+	color: white;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: 'Hind Madurai';
+}
+
+.jumboButton{
+	padding: 10px 25px 10px 25px;
+	margin: 25px 0 0 0;
+	color: white;
+	background: rgb(46, 46, 46);
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+
+.jumboButton p{
+	display: inline-block;
+	font-size: 25px;
+	font-family: 'Hind Madurai';
+}
+
+.sectionTwo{
+	width: 100%;
+	text-align: center;
+}
+
+.sectionTwoHeading{
+	font-size: 30px;
+	font-family: 'Hind Madurai';
+	margin-top: 100px;
+	width: 50%;
+	display: inline-block;
+}
+
+.gallery{
+	width: 100%;
+	margin: 50px 0px 100px 0px
+}
+
+.row{
+	width: 100%;
+}
+
+.row img{
+	margin: 6px;
+	width: 20%;
+	height: auto;
+}
+
+.sectionThree{
+	width: 100%;
+}
+
+.sectionThreeHeader{
+	width: 100%;
+	min-height: 400px;
+	background: url('pattern3.png');
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sectionThreeHeader h1{
+	color: white;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: 'Hind Madurai';
+}
+
+.sectionThreeContent{
+	min-height: 100vh;
+	text-align: center;
+	padding: 0 0 100px 0;
+}
+
+.sectionThreeSubheading{
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Hind Madurai';
+	margin: 15px 0px 25px 0px;
+	display: inline-block;
+	width: 50%;
+}
+
+.serviceContent{
+	width: 40%;
+	margin: 30px 30px 30px 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.serviceContent img{
+	width: 100%;
+}
+
+.serviceText{
+	text-align:left;
+}
+
+.serviceText h2{
+	font-size: 30px;
+	font-weight: 900;
+	font-family: 'Hind Madurai';
+	margin: 25px 0px 0px 0px;
+}
+
+.serviceText h3{
+	font-size: 24px;
+	font-weight: 500;
+	font-family: 'Hind Madurai';
+	margin: 15px 0px 0px 0px;
+}
+
+.serviceText p{
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Hind Madurai';
+	margin: 15px 0px 0px 0px;
+}
+.sectionFour{
+	width: 100%;
+}
+.sectionFourHeader{
+	width: 100%;
+	min-height: 400px;
+	background: url('q14.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sectionFourHeader h1{
+	color: white;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: 'Hind Madurai';
+}
+
+.sectionFourContent{
+	width: 100%;
+	text-align: center;
+}
+
+#map{
+	width: 60%;
+	height: 60vh;
+	margin: 60px auto 100px auto;
+	z-index: -1;
+}
+
+.sectionFive{
+	width: 100%;
+	height: 150px;
+	background: rgb(59, 59, 59);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sectionFive p{
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+	font-family: 'Hind Madurai';
+}
+
+#imageModal{
+	position:fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.9);
+	z-index: 10;
+	top:0;
+	left:0;
+	display: none;
+}
+
+.imageExitContainer{
+	width: 100%;
+	height: 50px;
+	text-align:right;
+}
+
+#imageExitButton{
+	background: none;
+	border: none;
+	color: gray;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: 'Hind Madurai';
+	margin: 15px 35px 0px 0px;
+}
+
+#imageModalImage{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }

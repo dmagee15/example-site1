@@ -1,15 +1,114 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fajita Flats</title>
+    <title>Broding Apartments</title>
     <link href="./favicon-256.png" rel="icon">
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>   
     <div class="container">
-      
+      <div class="header">
+        <a class="headerCompany" href='index.html'><div class="headerButton"><p>Broding Apartments</p></div></a>
+        <a href='index.html'><div class="headerButton"><p>About</p></div></a>
+        <a href='properties.html'><div class="headerButton"><p>Apartments</p></div></a>
+        <a href='contact.html'><div class="headerButton"><p>Contact</p></div></a>
+      </div>
+      <div class="jumbo">
+        <div class="jumboContent">
+          <h1 class="jumboPhrase">Redefining The Way You Live</h1>
+          <a href='properties.html'><div class="jumboButton"><p>View Apartments</p></div></a>
+        </div>
+      </div>
+      <div class="sectionTwo">
+        <h1 class="sectionTwoHeading">Modern and minimalist apartments designed to maximize convenience, luxury, and beauty.</h1>
+        <div class="gallery">
+          <div class="row">
+            <img onclick="imageModalHandler('q1.jpg')" src="q1.jpg"/>
+            <img onclick="imageModalHandler('q17.jpg')" src="q17.jpg"/>
+            <img onclick="imageModalHandler('q3.jpg')" src="q3.jpg"/>
+            <img onclick="imageModalHandler('q4.jpg')" src="q4.jpg"/>
+          </div>
+          <div class="row">
+              <img onclick="imageModalHandler('q5.jpg')" src="q5.jpg"/>
+              <img onclick="imageModalHandler('q6.jpg')" src="q6.jpg"/>
+              <img onclick="imageModalHandler('q7.jpg')" src="q7.jpg"/>
+              <img onclick="imageModalHandler('q8.jpg')" src="q8.jpg"/>
+          </div>
+          <div class="row">
+                <img onclick="imageModalHandler('q15.jpg')" src="q15.jpg"/>
+                <img onclick="imageModalHandler('q10.jpg')" src="q10.jpg"/>
+                <img onclick="imageModalHandler('q16.jpg')" src="q16.jpg"/>
+                <img onclick="imageModalHandler('q13.jpg')" src="q13.jpg"/>
+          </div>
+        </div>
+      </div>
+      <div class="sectionThree">
+        <div class="sectionThreeHeader">
+          <h1>Nearby Businesses and Services</h1>
+        </div>
+        <div class="sectionThreeContent">
+            <h1 class="sectionTwoHeading">Never a dull moment.</h1>
+            <p class="sectionThreeSubheading">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <div class="row">
+                <div class="serviceContent">
+                    <img src="q9.jpg"/>
+                    <div class="serviceText">
+                      <h2>Vibrant Nightlife</h2>
+                      <h3>Club 501</h3>
+                      <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    </div>
+                </div>
+                <div class="serviceContent">
+                    <img src="q12.jpg"/>
+                    <div class="serviceText">
+                        <h2>Museums</h2>
+                        <h3>Franklin Museum of Natural History</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="serviceContent">
+                    <img src="q2.jpg"/>
+                    <div class="serviceText">
+                      <h2>World Class Restaurants</h2>
+                      <h3>Dunder Steak House</h3>
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                </div>
+                <div class="serviceContent">
+                    <img src="q11.jpg"/>
+                    <div class="serviceText">
+                        <h2>Vibrant Nightlife</h2>
+                        <h3>Club 501</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="sectionFour">
+          <div class="sectionFourHeader">
+            <h1>Conveniently Located</h1>
+          </div>
+          <div class="sectionFourContent">
+              <h1 class="sectionTwoHeading">A place you can call home</h1>
+              <p class="sectionThreeSubheading">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              <div id="map"></div>
+          </div>
+      </div>
+      <div class="sectionFive">
+        <p>1239 Evergreen Rd, Santa Rolo, CA, 42312, United States</p>
+      </div>
+      <div id="imageModal">
+        <div class="imageExitContainer">
+          <button id="imageExitButton" onclick="exitImageModal()">x</button>
+        </div>
+        <img id="imageModalImage" src="q1.jpg"/>
+      </div>
     </div>
   </body>
-  
   <script src="./script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1munvl4oBFHvOEqxudlejjo_HNMeh4pQ&callback=initMap"
+    async defer></script>
 </html>

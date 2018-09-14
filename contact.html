@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broding Apartments</title>
+    <link href="./favicon-256.png" rel="icon">
+    <link href="./properties.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>   
+    <div class="container">
+      <div class="header">
+        <a class="headerCompany" href='index.html'><div class="headerButton"><p>Broding Apartments</p></div></a>
+        <a href='index.html'><div class="headerButton"><p>About</p></div></a>
+        <a href='properties.html'><div class="headerButton"><p>Apartments</p></div></a>
+        <a href='contact.html'><div class="headerButton"><p>Contact</p></div></a>
+      </div>
+      <div class="propertiesSectionHeader">
+        <h1>Have any questions? Send us a message!</h1>
+      </div>
+      <div class="propertiesContent" id="contactContent">
+            <div class="availableTypesSection">
+              <div class="availableTypesContainer">
+                <h1>Leasing</h1>
+                <p class="leasingQuestions">For questions or concerns regarding leasing or if you have any other questions, please use the form on the right.</p>
+              </div>
+              </div>
+              <div class="contentSection">
+                <form>
+                <div class="firstLastName">
+                <input type="text" placeholder="First Name" required="" id="firstName"/>
+                <input type="text" placeholder="Last Name" required="" id="lastName"/>
+                </div>
+                <input type="text" placeholder="Email" required="" id="email" />
+                <input type="text" placeholder="Phone #" required="" id="phone" />
+                <textarea placeholder="What would you like to ask?" required="" id="message"></textarea>
+                <button id="send">Send</button>
+                </form>
+              </div>
+        </div>
+      <div class="sectionFive">
+        <p>1239 Evergreen Rd, Santa Rolo, CA, 42312, United States</p>
+      </div>
+      <div id="imageModal">
+        <div class="imageExitContainer">
+          <button id="imageExitButton" onclick="exitImageModal()">x</button>
+        </div>
+        <img id="imageModalImage" src="q1.jpg"/>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

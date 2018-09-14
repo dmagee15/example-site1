@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broding Apartments</title>
+    <link href="./favicon-256.png" rel="icon">
+    <link href="./properties.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>   
+    <div class="container">
+      <div class="header">
+        <a class="headerCompany" href='index.html'><div class="headerButton"><p>Broding Apartments</p></div></a>
+        <a href='index.html'><div class="headerButton"><p>About</p></div></a>
+        <a href='properties.html'><div class="headerButton"><p>Apartments</p></div></a>
+        <a href='contact.html'><div class="headerButton"><p>Contact</p></div></a>
+      </div>
+      <div class="propertiesSectionHeader">
+        <h1>A home for any family</h1>
+      </div>
+      <div class="propertiesContent">
+          <div class="availableTypesSection">
+            <div class="availableTypesContainer">
+              <h1>Available Types</h1>
+              <a href="properties.html"><div class="availableType"><p>One Bedroom</p></div></a>
+              <a href="twobed.html"><div class="availableType"><p>Two Bedroom</p></div></a>
+              <a href="deluxe.html"><div class="availableType active"><p>Deluxe</p></div></a>
+            </div>
+            </div>
+            <div class="contentSection">
+              <img class="mainImage" src="q3.jpg"/>
+              <h1 class="price">$2749-$3149</h1>
+              <h2 class="roomSpecs">3 bed 3 bath 1950 ft&#178;</h2>
+              <p class="roomDescription">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              <button onclick="imageModalHandler('Floorplan.jpg')" class="floorPlanButton">Floor Plan</button>
+              <div class="gallery">
+                  <div class="row">
+                      <img onclick="imageModalHandler('q1.jpg')" src="q1.jpg"/>
+                      <img onclick="imageModalHandler('q17.jpg')" src="q17.jpg"/>
+                      <img onclick="imageModalHandler('q3.jpg')" src="q3.jpg"/>
+                    </div>
+                    <div class="row">
+                        <img onclick="imageModalHandler('q5.jpg')" src="q5.jpg"/>
+                        <img onclick="imageModalHandler('q6.jpg')" src="q6.jpg"/>
+                        <img onclick="imageModalHandler('q7.jpg')" src="q7.jpg"/>
+                    </div>
+              </div>
+            </div>
+      </div>
+      <div class="sectionFive">
+        <p>1239 Evergreen Rd, Santa Rolo, CA, 42312, United States</p>
+      </div>
+      <div id="imageModal">
+        <div class="imageExitContainer">
+          <button id="imageExitButton" onclick="exitImageModal()">x</button>
+        </div>
+        <img id="imageModalImage" src="q1.jpg"/>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
